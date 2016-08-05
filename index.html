@@ -65,7 +65,7 @@
                         <a class="page-scroll" href="#team">The Wedding</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#accomadations">Accomadations</a>
+                        <a class="page-scroll" href="#accommodations">Accommodations</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#registry">Registry</a>
@@ -82,9 +82,9 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading">We Are Getting Married!</div>
-                <div class="intro-lead-in">7.7.17</div>
+                <div class="intro-lead-in">July 17th, 2017</div>
 
-                <a href="#couple" class="page-scroll btn btn-xl">CountDownPlaceHolder</a>
+                <div id="countdown"></div>
             </div>
         </div>
     </header>
@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Couple</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -399,11 +399,11 @@
     </aside>
 
     <!-- Contact Section -->
-    <section id="accomadations">
+    <section id="accommodations">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Accomadations</h2>
+                    <h2 class="section-heading">Accommodations</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
@@ -669,6 +669,14 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
+    <script type="text/javascript">
+      $("#countdown")
+      .countdown("2017/07/07", function(event) {
+        $(this).text(
+          event.strftime('%D days %H:%M:%S')
+        );
+      });
+    </script>
 </body>
 
 </html>
