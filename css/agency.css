@@ -813,6 +813,15 @@ h4{
     width:100%;
     position:absolute;
 }
+
+.camp {
+  font-size: 15pt;
+  color: white;
+}
+
+.questions {
+  font-style: italic; 
+}
 /* Flexible iFrame */
 
 .Flexible-container {
